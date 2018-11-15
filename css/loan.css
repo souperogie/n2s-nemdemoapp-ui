@@ -45,8 +45,22 @@ img {
 
 .modal {
     width: 80% !important;
-    height: 800px !important;
 }
+
+#form,
+#formT {
+    height: 600px;
+    overflow: visible;
+}
+
+.modal-footer {
+    margin-top: 20px;
+}
+.modal-content {
+    overflow: hidden;
+}
+
+
 
 .modal .col img {
     height: 200px;
@@ -60,10 +74,13 @@ img {
     padding: 0 5px;
 }
 
-#terms {
+#terms,
+#termss {
     height: 300px;
     overflow: scroll;
 }
+
+
 
 footer img {
     width: 200px;

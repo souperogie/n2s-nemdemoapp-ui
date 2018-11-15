@@ -52,3 +52,8 @@
     $(function(){
         $("#terms").load("include/terms.html"); 
       });
+
+     //Terms and condition
+     $(function(){
+        $("#termss").load("include/terms.html"); 
+      });
