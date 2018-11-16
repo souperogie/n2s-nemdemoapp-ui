@@ -56,24 +56,84 @@
             <div style="padding: 35px;" align="center" class="card z-depth-3">
               <div class="row">
                 <div class="left card-title">
-                  <b>Product Management</b>
+                  <b>Money transfer</b>
                 </div>
               </div>
               <div class="row">
-                <a href="#!">
+                
+                <a class="modal-trigger" href="#remit">
                   <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
-                    <i class="indigo-text text-lighten-1 large material-icons">store</i>
-                    <span class="indigo-text text-lighten-1"><h5>Product</h5></span>
+                    <i class="indigo-text text-lighten-1 large material-icons">monetization_on</i>
+                    <span class="indigo-text text-lighten-1"><h5>Cash out</h5></span>
                   </div>
                 </a>
+
+                <!-- modal remit -->
+                <div id="remit" class="modal">
+                  <div class="modal-content">
+                    <h4>Choose remittance center</h4>
+                    <br><br>
+                      <div class="row">
+                        <div class="col s3">
+                          <a href="#remittance" class="modal-trigger"><img src="img/Cebuana.jpg" alt=""></a>
+                        </div>
+                        
+                        <div class="col s1"></div>
+
+                        <div class="col s3">
+                          <a href="#remittance" class="modal-trigger"><img src="img/mlhuillier.jpg" alt=""></a>
+                        </div>
+
+                        <div class="col s1"></div>
+
+                        <div class="col s3">
+                            <a href="#remittance" class="modal-trigger"><img src="img/palawan.png" alt=""></a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                  </div>
+                </div>
+                        
+                 <!-- modal remit end-->
+
+                   <!-- choose remit -->
+                <div id="remittance" class="modal">
+                    <div class="modal-content">
+                      <h4>Cash out</h4>
+                      <br><br>
+                      <div class="row">
+                      <div class="input-field col s6">
+                        <div class="input-field">
+                          <input id="amount" type="number" class="validate">
+                          <label for="amount">Enter Amount</label>
+                        </div>
+                      </div>
+                        <div class="col s3">
+                          <a class="waves-effect waves-light btn btnSub"><i class="material-icons right">send</i>submit</a>
+                        </div>
+                     
+                    </div>
+                      
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                  </div>
+                          
+                   <!-- choose remit end-->
+
+
+
     
                 <div class="col s1">&nbsp;</div>
                 <div class="col s1">&nbsp;</div>
     
-                <a href="#!">
+                <a href="#!" class="hide">
                   <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
                     <i class="indigo-text text-lighten-1 large material-icons">assignment</i>
-                    <span class="indigo-text text-lighten-1"><h5>Orders</h5></span>
+                    <span class="indigo-text text-lighten-1"><h5>Cash in</h5></span>
                   </div>
                 </a>
               </div>
@@ -128,13 +188,12 @@
             $(document).ready(function(){
                 $('.sidenav').sidenav();
             });
-
-            // modal
+            
+            //modal
             $(document).ready(function(){
-                $('.modal').modal();
-            });    
-
-           
+            $('.modal').modal();
+          });
+                  
     </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>

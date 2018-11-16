@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
+
+</style>
 <body>
     <div class="bg-opacity"></div>
     <div class="container">
@@ -55,6 +57,13 @@
             </div>
 
             <div class="row">
+                    <div class="input-field col s4">   
+                            <input id="email" type="email" class="validate">
+                        <label for="email">Email address</label>
+                    </div> 
+            </div>
+
+            <div class="row">
                 <h6 class="flow-text">Address</h6>
                 <div class="input-field col s2">   
                         <input id="block" type="number" class="validate">
@@ -78,6 +87,36 @@
                         <label>Province</label>
                       </div>
             </div>
+
+            <div class="row">
+                <h6 class="flow-text">Valid id's number</h6>
+                <div class="input-field col s4">
+                        <select>
+                          <option value="" disabled selected>Select type of costumer</option>
+                          <option value="1">sss no.</option>
+                          <option value="2">passport no.</option>
+                          <option value="2">drivers no.</option>
+                          <option value="2">postal no.</option>
+                        </select>
+                      </div>
+                <div class="input-field col s3">   
+                    <input id="pass" type="number" class="validate">
+                     <label for="pass">enter no.</label>
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <h6 class="flow-text">Type of costumer</h6>
+                <div class="input-field col s4">
+                    <select>
+                      <option value="" disabled selected>Select type of costumer</option>
+                      <option value="1">With collateral</option>
+                      <option value="2">Without collateral</option>
+                    </select>
+                  </div>
+            </div>
+
 
             <button class="btn waves-effect waves-light right-align" type="submit" name="action">Submit
                     <i class="material-icons right">send</i>

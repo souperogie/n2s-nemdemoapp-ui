@@ -55,5 +55,5 @@
 
      //Terms and condition
      $(function(){
-        $("#termss").load("include/terms.html"); 
+        $("#termss").load("include/termss.html"); 
       });
